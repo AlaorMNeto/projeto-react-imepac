@@ -1,23 +1,26 @@
 import { StyleSheet } from "react-native";
+import { themas } from "../../global/themes";
 
 export const style = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
         justifyContent: "center",
-        backgroundColor: "#4d96ce",
+        backgroundColor: themas.colors.corDeFundo,
     },
     title: {
         fontSize: 24,
         fontWeight: "bold",
         textAlign: "center",
         marginBottom: 30,
+        color: themas.colors.white,
     },
     label: {
         fontSize: 16,
         marginBottom: 5,
         marginTop: 15,
         fontWeight: "bold",
+        color: themas.colors.white,
     },
     inputContainer: {
         flexDirection: "row",
@@ -35,7 +38,7 @@ export const style = StyleSheet.create({
     },
     button: {
         marginTop: 20,
-        backgroundColor: "#29e009",
+        backgroundColor:themas.colors.primary,
         padding: 10,
         borderRadius: 10,
         alignItems: "center"

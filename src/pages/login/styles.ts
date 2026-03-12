@@ -11,8 +11,9 @@ export const style = StyleSheet.create({
     },
 
     title:{
-        marginLeft:22,
+        marginLeft:21,
         fontWeight: "bold",
+        color:themas.colors.white,
     },
 
     boxTop:{
@@ -34,8 +35,8 @@ export const style = StyleSheet.create({
         height:Dimensions.get("window").height/3,
     },
     button:{
-        width:200,
-        height:40,
+        width:215,
+        height:43,
         alignItems: 'center',
         justifyContent:'center',
         borderRadius:40,
@@ -64,5 +65,9 @@ export const style = StyleSheet.create({
         height:"100%",
         width:"90%",
         backgroundColor: themas.colors.lighGray,
-    }
+    },
+    colorandfontSize:{
+        color: themas.colors.white,
+        fontSize: 15,
+    },
 })

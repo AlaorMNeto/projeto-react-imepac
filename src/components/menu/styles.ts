@@ -5,13 +5,14 @@ export const style = StyleSheet.create({
     menuContainer: {
         flexDirection: "row",
         justifyContent: "space-around",
-        backgroundColor: "#4d96ce",
+        backgroundColor: "#122A4A",
         padding: 10,
         borderBottomWidth: 1,
-        borderBottomColor: "#29e009",
+        borderBottomColor: "#4A90E2",
     },
     menuItem: {
         fontSize: 16,
         fontWeight: "bold",
+        color:themas.colors.white,
     },
 })

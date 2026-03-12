@@ -10,6 +10,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { style } from "./styles";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../AppNavigation";
+
  type Props = NativeStackScreenProps<RootStackParamList, 'Cadastro'>;
 
 export default function Cadastro({ navigation }: Props) {
@@ -43,7 +44,7 @@ export default function Cadastro({ navigation }: Props) {
                  onChangeText={(text) => setNome(text)}
                  placeholder="Digite seu nome"
                  />
-                 <MaterialIcons name="person" size={20} color="gray" />
+                 <MaterialIcons name="person" size={22} color="gray" />
             </View>
 
             {/* Campo Email */}
@@ -56,7 +57,7 @@ export default function Cadastro({ navigation }: Props) {
                  placeholder="Digite seu email"
                  keyboardType="email-address"
                  />
-                 <MaterialIcons name="email" size={20} color="gray" />
+                 <MaterialIcons name="email" size={22} color="gray" />
             </View>
 
             {/* Campo Senha */}
@@ -69,7 +70,7 @@ export default function Cadastro({ navigation }: Props) {
                  placeholder="Digite sua senha"
                  secureTextEntry={true}
                  />
-                 <MaterialIcons name="lock" size={20} color="gray" />
+                 <MaterialIcons name="lock" size={22} color="gray" />
             </View>
 
             {/* Botão de Cadastro */}

@@ -1,12 +1,12 @@
 export const themas = {
     colors:{
-        primary:"#1fd52e",
+        primary:"#4A90E2",
         secondary:"#ffffff",
         lighGray:"#d7d8d7",
-        gray:'gray',
+        gray:'#ffffff',
         black:"#000000",
         white:"#ffffff",
         bgScreen:"#f1f7fa",
-        corDeFundo:"#1374a1",
+        corDeFundo:"#122A4A",
     }
 }
