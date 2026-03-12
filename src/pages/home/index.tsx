@@ -24,7 +24,7 @@ export default function handleHome() {
     return (
         <View style={style.container}>
             <Menu />
-
+            
             {/* Logo e descrição*/}
             <View style={style.header}>
             <Image 
@@ -54,6 +54,7 @@ export default function handleHome() {
 
             <TouchableOpacity
                     style={style.card}
+                    onPress={() => navigation.navigate("CadastrarTarefas")}
                 >
                     <Text style={style.cardIcon}>➕</Text>
                     <Text style={style.cardTitle}>Nova Tarefa</Text>

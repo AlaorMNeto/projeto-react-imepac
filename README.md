@@ -73,3 +73,58 @@ A interface do aplicativo foi construída com foco em:
 - Utilização de cores suaves (azul claro e branco)
 - Uso de ícones para melhorar a experiência do usuário
 - Estrutura baseada em cards, padrão comum em aplicações mobile modernas
+
+## Segunda etapa do projeto
+
+Na segunda etapa do desenvolvimento foi criada a funcionalidade de Cadastro de Tarefas, permitindo que o usuário registre atividades acadêmicas dentro do aplicativo.
+
+Essa tela foi desenvolvida utilizando um formulário interativo, permitindo inserir informações importantes sobre cada tarefa.
+
+## 2.1 Tela de Cadastro de Tarefas
+
+A tela Cadastrar Tarefas permite que o usuário registre novas atividades de estudo dentro do aplicativo.
+
+O formulário contém os seguintes campos:
+
+- Nome da tarefa – descrição da atividade que deve ser realizada
+- Disciplina – matéria relacionada à tarefa
+- Data de entrega – prazo para conclusão da atividade
+- Prioridade da tarefa – nível de importância da tarefa (Alta, Média ou Baixa) - em que o usuário pode marcar a prioridade da tarefa como Alta/Média/Baixa.
+
+## Interface da tela
+
+A interface foi projetada seguindo o mesmo padrão visual do restante do aplicativo, garantindo consistência na experiência do usuário.
+
+Elementos utilizados:
+
+- Ícones da biblioteca Material Icons
+- Cores organizadas seguindo o padrão visual do StudyTrack
+- Estrutura baseada em formulário simples e intuitivo
+- Botão de ação para salvar a tarefa
+
+Esses elementos tornam a tela fácil de utilizar e de compreender.
+
+## Funcionamento do formulário
+
+Ao preencher as informações da tarefa e pressionar o botão *Salvar Tarefa*, a aplicação executa uma função responsável por validar os dados inseridos.
+
+Caso os campos estejam preenchidos corretamente, um *alerta é exibido informando que a tarefa foi cadastrada com sucesso*.
+
+Esse comportamento permite demonstrar o funcionamento do formulário dentro da aplicação.
+
+## Boas práticas utilizadas
+
+Durante o desenvolvimento dessa funcionalidade foram aplicadas algumas boas práticas importantes:
+
+- Utilização de TypeScript para tipagem das rotas da aplicação
+- Definição do tipo RootStackParamList para controle das telas do aplicativo
+- Uso de NativeStackScreenProps para tipagem da navegação entre telas
+- Separação do código em arquivos organizados (index.tsx e styles.ts)
+
+Essas práticas tornam o código mais organizado, seguro e fácil de manter.
+
+# Autor
+
+Projeto desenvolvido por Alaor Miranda Neto
+Curso de Análise e Desenvolvimento de Sistemas
+IMEPAC

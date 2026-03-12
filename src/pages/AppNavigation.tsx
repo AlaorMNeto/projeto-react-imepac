@@ -5,12 +5,14 @@ import Cadastro from "./cadastro/index";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from './home/index';
+import CadastrarTarefas from "./cadastro-tarefas"; 
 
 // Definição correta do tipo das rotas
 export type RootStackParamList = {
     Login: undefined;
     Cadastro: undefined;
     Home: undefined;
+    CadastrarTarefas: undefined;
 }
 
 // Aplica-se o tipo no Stack Navigator
@@ -23,6 +25,7 @@ export default function AppNavigation() {
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="Cadastro" component={Cadastro} />
                 <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="CadastrarTarefas" component={CadastrarTarefas} />
             </Stack.Navigator>
         </NavigationContainer>
     );
