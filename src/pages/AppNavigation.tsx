@@ -8,6 +8,7 @@ import Home from './home/index';
 import CadastrarTarefas from "./cadastrarTarefas/index";
 import ListaTarefas from "./listarTarefas/index"; 
 import DetalhesTarefa from "./detalhesTarefas/index";
+import FrasesMotivacionais from "./frasesMotivacionais/index";
 
 // Definição correta do tipo das rotas
 export type RootStackParamList = {
@@ -17,6 +18,7 @@ export type RootStackParamList = {
     CadastrarTarefas: { tarefa?: any };
     ListaTarefas: { novaTarefa?: any };
     DetalhesTarefa: { tarefa: any };
+    FrasesMotivacionais: undefined;
 }
 
 // Aplica-se o tipo no Stack Navigator
@@ -32,6 +34,7 @@ export default function AppNavigation() {
                 <Stack.Screen name="CadastrarTarefas" component={CadastrarTarefas} />
                 <Stack.Screen name="ListaTarefas" component={ListaTarefas} />
                 <Stack.Screen name="DetalhesTarefa" component={DetalhesTarefa}/>
+                <Stack.Screen name="FrasesMotivacionais" component={FrasesMotivacionais}/>
             </Stack.Navigator>
         </NavigationContainer>
     );

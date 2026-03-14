@@ -66,6 +66,7 @@ export default function handleHome() {
 
                 <TouchableOpacity
                     style={style.card}
+                    onPress={() => navigation.navigate("FrasesMotivacionais")}
                 >
                     <Text style={style.cardIcon}>💡</Text>
                     <Text style={style.cardTitle}>Frases Motivacionais</Text>
