@@ -18,6 +18,17 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - Cadastro
 - Home
 
+# 🎨 Interface da Aplicação
+
+A interface do aplicativo foi construída com foco em:
+
+- Organização visual
+- Facilidade de uso
+- Navegação simples e intuitiva
+- Utilização de cores suaves (azul claro e branco)
+- Uso de ícones para melhorar a experiência do usuário
+- Estrutura baseada em cards, padrão comum em aplicações mobile modernas
+
 ## Primeira Etapa do Projeto
 
 Na primeira etapa do desenvolvimento foram implementadas as telas iniciais da aplicação, responsáveis pela navegação básica e acesso do usuário ao sistema.
@@ -35,7 +46,7 @@ Funcionalidades principais:
 - Botão de acesso ao sistema
 - Link para redirecionamento para a tela de cadastro
 
-# 1.2 📝 Tela de Cadastro
+## 1.2 📝 Tela de Cadastro
 
 A tela de Cadastro permite que novos usuários criem uma conta dentro do aplicativo.
 
@@ -46,7 +57,7 @@ Funcionalidades principais:
 - Interface simples e organizada
 - Navegação para retorno à tela de login
 
-# 1.3 🏠 Tela Home (Dashboard)
+## 1.3 🏠 Tela Home (Dashboard)
 
 A tela Home funciona como o painel principal do aplicativo.
 
@@ -62,17 +73,6 @@ Cards disponíveis:
 - 📚 Minhas Tarefas – acesso à lista de tarefas de estudo
 - ➕ Nova Tarefa – cadastro de novas tarefas de estudo
 - 💡 Frases Motivacionais – área que exibirá frases motivacionais obtidas por meio de uma API
-
-## 🎨 Interface da aplicação
-
-A interface do aplicativo foi construída com foco em:
-
-- Organização visual
-- Facilidade de uso
-- Navegação simples e intuitiva
-- Utilização de cores suaves (azul claro e branco)
-- Uso de ícones para melhorar a experiência do usuário
-- Estrutura baseada em cards, padrão comum em aplicações mobile modernas
 
 ## Segunda Etapa do Projeto
 
@@ -218,5 +218,5 @@ Assim, o projeto *StudyTrack* foi finalizado com sucesso, apresentando uma aplic
 # Autor
 
 Projeto desenvolvido por Alaor Miranda Neto
-Curso de Análise e Desenvolvimento de Sistemas
-IMEPAC
+<p>Curso de Análise e Desenvolvimento de Sistemas</p>
+<p>IMEPAC</p>
