@@ -5,7 +5,7 @@ export const style = StyleSheet.create({
     container:{
         flex:1,
         backgroundColor:"#122A4A",
-        padding:15,
+        padding:10,
     },
 
     title:{
@@ -52,8 +52,18 @@ export const style = StyleSheet.create({
       alignItems:"center"
     },
 
-    priorityText:{
-      color:"#FFF",
+    priorityText1:{
+      color:"#d50000",
+      fontWeight:"bold"
+    },
+
+    priorityText2:{
+      color:"#FFA500",
+      fontWeight:"bold"
+    },
+
+    priorityText3:{
+      color:"#008000",
       fontWeight:"bold"
     },
 

@@ -16,25 +16,44 @@ import { RootStackParamList } from "../AppNavigation";
 
 type Props = NativeStackScreenProps<RootStackParamList, 'CadastrarTarefas'>;
 
-export default function CadastrarTarefas(){
+export default function CadastrarTarefas({ navigation }: Props){
 
     const [tarefa,setTarefa] = useState("");
     const [disciplina,setDisciplina] = useState("");
     const [data,setData] = useState("");
     const [prioridade,setPrioridade] = useState("");
 
-    function handleCadastrarTarefas() {
+   function handleCadastrarTarefas() {
         try {
-                    if(!tarefa || !disciplina || !data || !prioridade) {
-                        return Alert.alert("Preencha todos os campos");
-                    }
-                    Alert.alert("Tarefa cadastrada com sucesso!", "", [
-                    ]);
-                } catch (error) {
-                    console.log("Erro ao cadastrar tarefa. Tente novamente!", error);
-                }
-    }
 
+        if(!tarefa || !disciplina || !data || !prioridade){
+            return Alert.alert("Preencha todos os campos");
+        }
+
+        const novaTarefa = {
+        id: Date.now().toString(),
+        nome: tarefa,
+        disciplina: disciplina,
+        data: data,
+        prioridade: prioridade,
+        status: "Pendente"
+        };
+
+        Alert.alert(
+            "Tarefa cadastrada com sucesso!",
+            "",
+            [
+                {
+                    text:"OK",
+                    onPress: () => navigation.navigate("ListaTarefas",{ novaTarefa })
+                }
+            ]
+        );
+
+        } catch (error) {
+        console.log("Erro ao cadastrar tarefa. Tente novamente!", error);
+        }
+    }
     return(
 
     <View style={style.container}>
@@ -46,7 +65,7 @@ export default function CadastrarTarefas(){
      {/* Nome da tarefa */}
 
       <View style={style.inputContainer}>
-      <MaterialIcons name="task" size={22} color="gray"/>
+      <MaterialIcons name="task" size={23} color="gray"/>
       <TextInput
       placeholder="Nome da tarefa"
       style={style.input}
@@ -58,7 +77,7 @@ export default function CadastrarTarefas(){
     {/* Disciplina */}
 
     <View style={style.inputContainer}>
-    <MaterialIcons name="menu-book" size={22} color="gray"/>
+    <MaterialIcons name="menu-book" size={23} color="gray"/>
     <TextInput
     placeholder="Disciplina"
     style={style.input}
@@ -70,7 +89,7 @@ export default function CadastrarTarefas(){
    {/* Data */}
 
    <View style={style.inputContainer}>
-   <MaterialIcons name="date-range" size={22} color="gray"/>
+   <MaterialIcons name="date-range" size={23} color="gray"/>
    <TextInput
    placeholder="Data de entrega"
    style={style.input}
@@ -91,7 +110,7 @@ export default function CadastrarTarefas(){
   ]}
   onPress={()=>setPrioridade("Alta")}
   >
-  <Text style={style.priorityText}>Alta</Text>
+  <Text style={style.priorityText1}>Alta</Text>
   </TouchableOpacity>
 
   <TouchableOpacity
@@ -100,7 +119,7 @@ export default function CadastrarTarefas(){
   ]}
   onPress={()=>setPrioridade("Média")}
   >
-  <Text style={style.priorityText}>Média</Text>
+  <Text style={style.priorityText2}>Média</Text>
   </TouchableOpacity>
 
   <TouchableOpacity
@@ -109,7 +128,7 @@ export default function CadastrarTarefas(){
   ]}
   onPress={()=>setPrioridade("Baixa")}
   >
-  <Text style={style.priorityText}>Baixa</Text>
+  <Text style={style.priorityText3}>Baixa</Text>
   </TouchableOpacity>
 
   </View>

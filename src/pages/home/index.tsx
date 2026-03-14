@@ -44,6 +44,7 @@ export default function handleHome() {
 
             <TouchableOpacity
                 style={style.card}
+                onPress={() => navigation.navigate("ListaTarefas", {})}
             >
               <Text style={style.cardIcon}>📚</Text>
               <Text style={style.cardTitle}>Minhas Tarefas</Text>
@@ -54,7 +55,7 @@ export default function handleHome() {
 
             <TouchableOpacity
                     style={style.card}
-                    onPress={() => navigation.navigate("CadastrarTarefas")}
+                    onPress={() => navigation.navigate("CadastrarTarefas", { tarefa: undefined })}
                 >
                     <Text style={style.cardIcon}>➕</Text>
                     <Text style={style.cardTitle}>Nova Tarefa</Text>
