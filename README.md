@@ -18,7 +18,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - Cadastro
 - Home
 
-# 🎨 Interface da Aplicação
+## 🎨 Interface da Aplicação
 
 A interface do aplicativo foi construída com foco em:
 
